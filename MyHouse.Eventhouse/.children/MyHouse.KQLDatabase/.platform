@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "MyHouse",
+    "description": "MyHouse",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "c50148d4-d5c7-84e2-4592-b5b648b043bf"
+  }
+}
