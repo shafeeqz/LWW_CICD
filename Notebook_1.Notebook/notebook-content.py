@@ -11,7 +11,7 @@
 
 # CELL ********************
 
-# Welcome to your new notebook
+# Welcome to your new notebook but say no way
 # Type here in the cell editor to add code!
 
 
