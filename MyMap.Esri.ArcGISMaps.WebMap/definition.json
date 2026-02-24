@@ -1,1 +1,50 @@
-{"arcgis":{"webMap":{"operationalLayers":[],"baseMap":{"baseMapLayers":[{"id":"dark-gray-base-layer","opacity":1,"title":"Dark Gray Base","visibility":true,"layerType":"VectorTileLayer","styleUrl":"https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json"},{"id":"dark-gray-reference-layer","opacity":1,"title":"Dark Gray Reference","visibility":true,"layerType":"VectorTileLayer","styleUrl":"https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json","isReference":true}],"title":"Dark Gray Canvas"},"authoringApp":"ArcGIS API for JavaScript","authoringAppVersion":"4.34","initialState":{"viewpoint":{"targetGeometry":{"spatialReference":{"wkid":102100},"xmin":3566406.5189395323,"ymin":3474227.3094804073,"xmax":4220707.481060468,"ymax":3898605.6905195927}}},"spatialReference":{"latestWkid":3857,"wkid":102100},"timeZone":"system","version":"2.35"}}}
+{
+    "arcgis": {
+        "webMap": {
+            "operationalLayers": [],
+            "baseMap": {
+                "baseMapLayers": [
+                    {
+                        "id": "dark-gray-base-layer",
+                        "opacity": 1,
+                        "title": "Dark Gray Base",
+                        "visibility": true,
+                        "layerType": "VectorTileLayer",
+                        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json"
+                    },
+                    {
+                        "id": "dark-gray-reference-layer",
+                        "opacity": 1,
+                        "title": "Dark Gray Reference",
+                        "visibility": true,
+                        "layerType": "VectorTileLayer",
+                        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json",
+                        "isReference": true
+                    }
+                ],
+                "title": "Dark Gray Canvas"
+            },
+            "authoringApp": "ArcGIS API for JavaScript",
+            "authoringAppVersion": "4.34",
+            "initialState": {
+                "viewpoint": {
+                    "targetGeometry": {
+                        "spatialReference": {
+                            "wkid": 102100
+                        },
+                        "xmin": 3566406.5189395323,
+                        "ymin": 3474227.3094804073,
+                        "xmax": 4220707.481060468,
+                        "ymax": 3898605.6905195927
+                    }
+                }
+            },
+            "spatialReference": {
+                "latestWkid": 3857,
+                "wkid": 102100
+            },
+            "timeZone": "system",
+            "version": "2.35"
+        }
+    }
+}
