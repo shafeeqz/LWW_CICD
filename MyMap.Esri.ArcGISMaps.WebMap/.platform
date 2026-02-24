@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Esri.ArcGISMaps.WebMap",
+    "displayName": "MyMap"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "65840c62-0361-a4e1-4076-350ccb355e8e"
+  }
+}

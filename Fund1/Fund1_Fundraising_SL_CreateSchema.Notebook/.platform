@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Fund1_Fundraising_SL_CreateSchema",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f0572eea-364f-9654-40c5-f8f85cbf7c3e"
+  }
+}

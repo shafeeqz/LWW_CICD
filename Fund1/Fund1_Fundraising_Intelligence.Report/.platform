@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Fund1_Fundraising_Intelligence",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e43bfb6e-0f34-bf49-4837-deeaae7b08a1"
+  }
+}

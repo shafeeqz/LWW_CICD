@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Fund1_Fundraising_SL_GD_Enrichment",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8320cac0-9d3e-bff7-4a26-7250c4d8c10f"
+  }
+}
