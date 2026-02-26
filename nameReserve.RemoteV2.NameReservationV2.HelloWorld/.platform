@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "RemoteV2.NameReservationV2.HelloWorld",
+    "displayName": "nameReserve"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "729d065a-4c5e-b753-4bf0-c977e1f83e8f"
+  }
+}
