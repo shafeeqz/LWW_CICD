@@ -1,0 +1,108 @@
+{
+  "visual": {
+    "name": "focusViz",
+    "displayName": "FocusViz",
+    "guid": "focusVizE3DCCAC75FAD4276A876335624F22EC5",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "a",
+    "supportUrl": "a",
+    "gitHubUrl": "a"
+  },
+  "author": {
+    "name": "a",
+    "email": "a"
+  },
+  "apiVersion": "5.9.0",
+  "style": "style/visual.less",
+  "stringResources": {},
+  "capabilities": {
+    "dataRoles": [
+      {
+        "displayName": "Category Data",
+        "name": "category",
+        "kind": "Grouping"
+      },
+      {
+        "displayName": "Measure Data",
+        "name": "measure",
+        "kind": "Measure"
+      }
+    ],
+    "objects": {
+      "dataPoint": {
+        "properties": {
+          "defaultColor": {
+            "type": {
+              "fill": {
+                "solid": {
+                  "color": true
+                }
+              }
+            }
+          },
+          "showAllDataPoints": {
+            "type": {
+              "bool": true
+            }
+          },
+          "fill": {
+            "type": {
+              "fill": {
+                "solid": {
+                  "color": true
+                }
+              }
+            }
+          },
+          "fillRule": {
+            "type": {
+              "fill": {}
+            }
+          },
+          "fontSize": {
+            "type": {
+              "formatting": {
+                "fontSize": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "dataViewMappings": [
+      {
+        "categorical": {
+          "categories": {
+            "for": {
+              "in": "category"
+            },
+            "dataReductionAlgorithm": {
+              "top": {}
+            }
+          },
+          "values": {
+            "select": [
+              {
+                "bind": {
+                  "to": "measure"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "privileges": []
+  },
+  "content": {
+    "js": "var focusVizE3DCCAC75FAD4276A876335624F22EC5;(()=>{\"use strict\";var e={84:(e,t,i)=>{i.d(t,{DP:()=>n,Hn:()=>o,L_:()=>u,Zh:()=>d,sF:()=>r,zH:()=>p});var a=i(827);class s{}class l extends s{}class o{}class n extends s{}class r extends l{}class c extends s{constructor(e){super(),Object.assign(this,e)}getFormattingSlice(e,t){const i=this.type,a=this.name,s={displayName:t&&this.displayNameKey?t.getDisplayName(this.displayNameKey):this.displayName,description:t&&this.descriptionKey?t.getDisplayName(this.descriptionKey):this.description,uid:e+\"-\"+a};return Object.assign(Object.assign({},s),{control:{type:i,properties:this.getFormattingComponent(e,t)}})}getFormattingComponent(e,t){return{descriptor:a.B(e,this),value:this.value}}getRevertToDefaultDescriptor(e){return[{objectName:e,propertyName:this.name}]}setPropertiesValues(e,t){var i;let s=null===(i=null==e?void 0:e[t])||void 0===i?void 0:i[this.name];this.value=a.S(this,s,this.value)}}class d extends c{constructor(e){super(e),this.type=\"ToggleSwitch\"}}class p extends c{constructor(e){super(e),this.type=\"ColorPicker\"}getFormattingComponent(e){return Object.assign(Object.assign({},super.getFormattingComponent(e)),{defaultColor:this.defaultColor,isNoFillItemSupported:this.isNoFillItemSupported})}}class u extends c{constructor(e){super(e),this.type=\"NumUpDown\"}getFormattingComponent(e){return Object.assign(Object.assign({},super.getFormattingComponent(e)),{options:this.options})}}},261:(e,t,i)=>{i.d(t,{Z:()=>s});var a=i(84);const s=class{constructor(e){this.localizationManager=e}populateFormattingSettingsModel(e,t){var i,s;let l=new e,o=null===(i=null==t?void 0:t.metadata)||void 0===i?void 0:i.objects;return o&&(null===(s=l.cards)||void 0===s||s.forEach((e=>{var t;e instanceof a.DP&&(null===(t=e.topLevelSlice)||void 0===t||t.setPropertiesValues(o,e.name)),(e instanceof a.sF?[e]:e.groups).forEach((t=>{var i,a,s,l;null===(i=t.topLevelSlice)||void 0===i||i.setPropertiesValues(o,e.name),null===(a=null==t?void 0:t.slices)||void 0===a||a.forEach((t=>{null==t||t.setPropertiesValues(o,e.name)})),null===(l=null===(s=null==t?void 0:t.container)||void 0===s?void 0:s.containerItems)||void 0===l||l.forEach((t=>{var i;null===(i=null==t?void 0:t.slices)||void 0===i||i.forEach((t=>{null==t||t.setPropertiesValues(o,e.name)}))}))}))}))),l}buildFormattingModel(e){let t={cards:[]};return e.cards.filter((({visible:e=!0})=>e)).forEach((e=>{var i;let s={displayName:this.localizationManager&&e.displayNameKey?this.localizationManager.getDisplayName(e.displayNameKey):e.displayName,description:this.localizationManager&&e.descriptionKey?this.localizationManager.getDisplayName(e.descriptionKey):e.description,groups:[],uid:e.name+\"-card\",analyticsPane:e.analyticsPane};const l=e.name;if(e.topLevelSlice){let t=e.topLevelSlice.getFormattingSlice(l,this.localizationManager);t.suppressDisplayName=!0,s.topLevelToggle=t}null===(i=e.onPreProcess)||void 0===i||i.call(e);const o=e instanceof a.sF;(o?[e].filter((({visible:e=!0})=>e)):e.groups.filter((({visible:e=!0})=>e))).forEach((e=>{const t=e.name+\"-group\",i={displayName:o?void 0:this.localizationManager&&e.displayNameKey?this.localizationManager.getDisplayName(e.displayNameKey):e.displayName,description:o?void 0:this.localizationManager&&e.descriptionKey?this.localizationManager.getDisplayName(e.descriptionKey):e.description,slices:[],uid:t,collapsible:e.collapsible,delaySaveSlices:e.delaySaveSlices,disabled:e.disabled,disabledReason:e.disabledReason};s.groups.push(i);const a={};if(e.container){const s=e.container,o=t+\"-container\",n={displayName:this.localizationManager&&s.displayNameKey?this.localizationManager.getDisplayName(s.displayNameKey):s.displayName,description:this.localizationManager&&s.descriptionKey?this.localizationManager.getDisplayName(s.descriptionKey):s.description,containerItems:[],uid:o};s.containerItems.forEach((e=>{const t=e.displayNameKey?e.displayNameKey:e.displayName,i=o+t;let s={displayName:this.localizationManager&&e.displayNameKey?this.localizationManager.getDisplayName(e.displayNameKey):e.displayName,slices:[],uid:i};this.buildFormattingSlices({slices:e.slices,objectName:l,sliceNames:a,formattingSlices:s.slices}),n.containerItems.push(s)})),i.container=n}if(e.slices){if(e.topLevelSlice){let t=e.topLevelSlice.getFormattingSlice(l,this.localizationManager);t.suppressDisplayName=!0,(null==i.displayName?s:i).topLevelToggle=t}this.buildFormattingSlices({slices:e.slices,objectName:l,sliceNames:a,formattingSlices:i.slices})}})),s.revertToDefaultDescriptors=this.getRevertToDefaultDescriptor(e),t.cards.push(s)})),t}buildFormattingSlices({slices:e,objectName:t,sliceNames:i,formattingSlices:a}){null==e||e.filter((({visible:e=!0})=>e)).forEach((e=>{let s=null==e?void 0:e.getFormattingSlice(t,this.localizationManager);s&&(void 0===i[e.name]?i[e.name]=0:(i[e.name]++,s.uid=`${s.uid}-${i[e.name]}`),a.push(s))}))}getRevertToDefaultDescriptor(e){var t;const i={};let s,l=[],o=[];return e instanceof a.DP&&e.topLevelSlice&&l.push(...null===(t=e.topLevelSlice)||void 0===t?void 0:t.getRevertToDefaultDescriptor(e.name)),(e instanceof a.sF?[e].filter((({visible:e=!0})=>e)):e.groups.filter((({visible:e=!0})=>e))).forEach((t=>{var a,n;s=this.getSlicesRevertToDefaultDescriptor(e.name,t.slices,i,t.topLevelSlice),null===(n=null===(a=t.container)||void 0===a?void 0:a.containerItems)||void 0===n||n.forEach((t=>{o=o.concat(this.getSlicesRevertToDefaultDescriptor(e.name,t.slices,i))})),l.push(...s.concat(o))})),l}getSlicesRevertToDefaultDescriptor(e,t,i,a){let s=[];return a&&(i[a.name]=!0,s=s.concat(a.getRevertToDefaultDescriptor(e))),null==t||t.forEach((t=>{t&&!i[t.name]&&(i[t.name]=!0,s=s.concat(t.getRevertToDefaultDescriptor(e)))})),s}}},827:(e,t,i)=>{function a(e,t){return{objectName:e,propertyName:t.name,selector:t.selector,altConstantValueSelector:t.altConstantSelector,instanceKind:t.instanceKind}}function s(e,t,i){return null==t||\"object\"==typeof t&&!t.solid?i:t.solid?{value:null==t?void 0:t.solid.color}:(null==e?void 0:e.items)?e.items.find((e=>e.value==t)):t}i.d(t,{B:()=>a,S:()=>s})},635:(e,t,i)=>{i.d(t,{E:()=>n});var a=i(84),s=a.sF,l=a.Hn;class o extends s{defaultColor=new a.zH({name:\"defaultColor\",displayName:\"Default color\",value:{value:\"\"}});showAllDataPoints=new a.Zh({name:\"showAllDataPoints\",displayName:\"Show all\",value:!0});fill=new a.zH({name:\"fill\",displayName:\"Fill\",value:{value:\"\"}});fillRule=new a.zH({name:\"fillRule\",displayName:\"Color saturation\",value:{value:\"\"}});fontSize=new a.L_({name:\"fontSize\",displayName:\"Text Size\",value:12});name=\"dataPoint\";displayName=\"Data colors\";slices=[this.defaultColor,this.showAllDataPoints,this.fill,this.fillRule,this.fontSize]}class n extends l{dataPointCard=new o;cards=[this.dataPointCard]}},194:(e,t,i)=>{i.d(t,{u:()=>l});var a=i(261),s=i(635);class l{target;updateCount;textNode;formattingSettings;formattingSettingsService;mainDiv;leftDiv;rightDiv;constructor(e){if(console.log(\"Visual constructor\",e),this.formattingSettingsService=new a.Z,this.target=e.element,this.updateCount=0,document){const e=document.createElement(\"p\");e.appendChild(document.createTextNode(\"Update count:\"));const t=document.createElement(\"em\");this.textNode=document.createTextNode(this.updateCount.toString()),t.appendChild(this.textNode),e.appendChild(t),this.mainDiv=document.createElement(\"div\"),this.mainDiv.classList.add(\"container\"),this.leftDiv=document.createElement(\"div\"),this.leftDiv.classList.add(\"left-div\"),this.rightDiv=document.createElement(\"div\"),this.rightDiv.classList.add(\"right-div\"),this.mainDiv.appendChild(this.leftDiv),this.mainDiv.appendChild(this.rightDiv),this.target.appendChild(this.mainDiv)}}update(e){this.formattingSettings=this.formattingSettingsService.populateFormattingSettingsModel(s.E,e.dataViews[0]),console.log(\"Visual update\",e),this.mainDiv.style.height=`${e.viewport.height}px`,this.mainDiv.style.width=`${e.viewport.width}px`}getFormattingModel(){return this.formattingSettingsService.buildFormattingModel(this.formattingSettings)}}}},t={};function i(a){var s=t[a];if(void 0!==s)return s.exports;var l=t[a]={exports:{}};return e[a](l,l.exports,i),l.exports}i.d=(e,t)=>{for(var a in t)i.o(t,a)&&!i.o(e,a)&&Object.defineProperty(e,a,{enumerable:!0,get:t[a]})},i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var a={};(()=>{i.r(a),i.d(a,{default:()=>l});var e=i(194),t=window.powerbi,s={name:\"focusVizE3DCCAC75FAD4276A876335624F22EC5\",displayName:\"FocusViz\",class:\"Visual\",apiVersion:\"5.9.0\",create:t=>{if(e.u)return new e.u(t);throw\"Visual instance not found\"},createModalDialog:(e,t,i)=>{const a=globalThis.dialogRegistry;e in a&&new a[e](t,i)},custom:!0};void 0!==t&&(t.visuals=t.visuals||{},t.visuals.plugins=t.visuals.plugins||{},t.visuals.plugins.focusVizE3DCCAC75FAD4276A876335624F22EC5=s);const l=s})(),focusVizE3DCCAC75FAD4276A876335624F22EC5=a})();",
+    "css": "p {\n  font-size: 20px;\n  font-weight: bold;\n}\np em {\n  background: yellow;\n  padding: 5px;\n}\n.container {\n  display: flex;\n}\n.left-div {\n  width: 75%;\n  height: 100%;\n  background-color: aqua;\n}\n.right-div {\n  width: 25%;\n  height: 100%;\n  background-color: orange;\n}\n\n",
+    "iconBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBOEJGMzkxN0NBRDNFMDExQTcxQ0JFODI3ODBCQUE5RSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NEY1QjA1NUQ0OTAxMUUwQTgxREI2NjMxMkNEMUNEMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NEY1QjA1NEQ0OTAxMUUwQTgxREI2NjMxMkNEMUNEMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Mjk5RDU1ODBGRDRFMDExQTcxQ0JFODI3ODBCQUE5RSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBOEJGMzkxN0NBRDNFMDExQTcxQ0JFODI3ODBCQUE5RSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpDoNX0AAAI3SURBVHjarJRLSFVRFIY9t7SiRDGLoEEPCRJRaCSYkxCiFCXCF+LIMExQLkilgumgwkbdBuWDRC2EomhURCOjgagkXEgKLUKhidobM6H0+i34rxyPnuvEA5/rXPda/1l7739vJxKJxG3ls93+hEKhTILxJhgMftmsiPxdhHw4CfepeR8dCyjWwwB0kZy3iVgCoQ2ewnmXxhrBD7Cgr/ZQVA17fDRPw2UYhzK6G99IsBse6/0QNME+H8FT4EA/YiPqOgA1q4IMzBNuw6iKjkCpj+Av+AdnEEmD3bxfhzvuDk30HaEaLsEkXCO53rN+Bwg5qsvTuj/TjGYtx9nINhRmEx7AYWiFW7AXOuEcbPOUvIZ2mnrl+PkQUbNEh4QHNKUSDdsSBWEOlmxTEfvs26FL9Khe211if6Acgee+xo7xzMgBxfq9qPe3fgWBGN2lEnqtG9nExM7CV3jp3bDos2bKJB0nHFRxAxRpA/5CIXyHh5ABv6GZqd9dJ6iz2SjbxMMypGhJFtTlNzu3kK7xgDxpove8U66FK2A+s6nul5gVVMEL+Ak7lG/T+g9JcIOGar2CRUoogxMwpP/bLTJMB9bRhDbkk5bBUU0y3ES0xS04CBfN9RSHiY90vJK0BHaSzG9h2eejS3RJeVfdtrGzuGyd8CX7Yq6ExuCH63jaVMPkFOv6OibB6DKs2+VEQp+WYBoqERn2sVWWRNN0YurIfeL14U6YkpkLYCSG6e0yqdCxvKBLIm5FgAEAV0nKuwMYRUsAAAAASUVORK5CYII="
+  },
+  "visualEntryPoint": "",
+  "externalJS": [],
+  "assets": {
+    "icon": "assets/icon.png"
+  }
+}

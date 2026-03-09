@@ -1,0 +1,85 @@
+{
+  "config": "{\"version\":\"5.67\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU10\",\"type\":2,\"version\":{\"visual\":\"2.1.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "waterfall6C9ED82ABD1F44C4A0D590CE01EB5EE7"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU10",
+            "path": "BaseThemes/CY25SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "focusVizE3DCCAC75FAD4276A876335624F22EC5.pbiviz.json",
+            "path": "focusVizE3DCCAC75FAD4276A876335624F22EC5.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "focusVizE3DCCAC75FAD4276A876335624F22EC5",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f8ce1d79c340d4777100",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"212121675a25894ec507\",\"layouts\":[{\"id\":0,\"position\":{\"x\":440,\"y\":253,\"z\":1002,\"width\":350,\"height\":266,\"tabOrder\":1002}}],\"singleVisual\":{\"visualType\":\"scorecard\",\"drillFilterOtherVisuals\":true,\"objects\":{\"scorecard\":[{\"properties\":{\"displayMode\":{\"expr\":{\"Literal\":{\"Value\":\"'tile'\"}}},\"goalIds\":{\"expr\":{\"Literal\":{\"Value\":\"'14a976bb-e144-42d5-b428-16f5df48732c'\"}}},\"scorecardId\":{\"expr\":{\"Literal\":{\"Value\":\"'a642f96c-b884-4584-8632-b4c5eb17c137'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 266.00,
+          "width": 350.00,
+          "x": 440.00,
+          "y": 253.00,
+          "z": 1002.00
+        },
+        {
+          "config": "{\"name\":\"4e7a4b1a0c6301c64000\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table.Product\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table.Price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Product\"},\"Name\":\"Table.Product\",\"NativeReferenceName\":\"Product\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Table.Price)\",\"NativeReferenceName\":\"Sum of Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Price\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"747034810c3ad97c6cd7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":367,\"y\":39,\"z\":1001,\"width\":280,\"height\":150,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"focusVizE3DCCAC75FAD4276A876335624F22EC5\",\"projections\":{\"measure\":[{\"queryRef\":\"Sum(Table.Price)\"}],\"category\":[{\"queryRef\":\"Table.Product\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Table.Price)\",\"NativeReferenceName\":\"Sum of Price\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Product\"},\"Name\":\"Table.Product\",\"NativeReferenceName\":\"Product\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Price\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 280.00,
+          "x": 367.00,
+          "y": 39.00,
+          "z": 1001.00
+        },
+        {
+          "config": "{\"name\":\"96b05dfc255709067366\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"waterfall6C9ED82ABD1F44C4A0D590CE01EB5EE7\",\"projections\":{\"Category\":[{\"queryRef\":\"Table.Product\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(Table.Price)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Product\"},\"Name\":\"Table.Product\",\"NativeReferenceName\":\"Product\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Price\"}},\"Function\":0},\"Name\":\"Sum(Table.Price)\",\"NativeReferenceName\":\"Sum of Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Price\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"visualCreatedVersion\":[{\"properties\":{\"version\":{\"expr\":{\"Literal\":{\"Value\":\"'7.7.2.87'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

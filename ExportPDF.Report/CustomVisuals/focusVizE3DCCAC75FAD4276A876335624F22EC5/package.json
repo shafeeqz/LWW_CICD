@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0.0",
+  "author": {
+    "name": "a",
+    "email": "a"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/focusVizE3DCCAC75FAD4276A876335624F22EC5.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "focusVizE3DCCAC75FAD4276A876335624F22EC5",
+    "name": "focusViz",
+    "displayName": "FocusViz",
+    "version": "1.0.0.0",
+    "description": "a",
+    "supportUrl": "a",
+    "gitHubUrl": "a",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
