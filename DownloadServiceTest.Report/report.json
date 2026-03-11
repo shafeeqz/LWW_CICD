@@ -1,0 +1,77 @@
+{
+  "config": "{\"version\":\"5.32\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU03\",\"version\":\"5.31\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"allowAutomatedInsightsNotification\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]},\"creationSource\":\"QuickCreate\"}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU03",
+            "path": "BaseThemes/CY22SU03.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "dServiceViz4D472C1DD4684D7D93239E3B34D38F77.pbiviz.json",
+            "path": "dServiceViz4D472C1DD4684D7D93239E3B34D38F77.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "dServiceViz4D472C1DD4684D7D93239E3B34D38F77",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "extendedDownloadAPIViz5037EC0CF11C43518A97AEDD13679D95.pbiviz.json",
+            "path": "extendedDownloadAPIViz5037EC0CF11C43518A97AEDD13679D95.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "extendedDownloadAPIViz5037EC0CF11C43518A97AEDD13679D95",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1c1583fad0cacb967451\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":280,\"height\":280,\"z\":1}}],\"singleVisual\":{\"visualType\":\"extendedDownloadAPIViz5037EC0CF11C43518A97AEDD13679D95\",\"projections\":{\"measure\":[{\"queryRef\":\"Sum(Simple Input.a)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Simple Input\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"a\"}},\"Function\":0},\"Name\":\"Sum(Simple Input.a)\",\"NativeReferenceName\":\"a\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"a\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"8b7c943a7bc0d841e574\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0}}],\"singleVisual\":{\"visualType\":\"dServiceViz4D472C1DD4684D7D93239E3B34D38F77\",\"projections\":{\"measure\":[{\"queryRef\":\"Sum(Simple Input.a)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Simple Input\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"a\"}},\"Function\":0},\"Name\":\"Sum(Simple Input.a)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"a\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

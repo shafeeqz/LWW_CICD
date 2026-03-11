@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "author": {
+    "name": "Shafeeq Azzam",
+    "email": "t-sazzam@microsoft.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/extendedDownloadAPIViz5037EC0CF11C43518A97AEDD13679D95.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "extendedDownloadAPIViz5037EC0CF11C43518A97AEDD13679D95",
+    "name": "extendedDownloadAPIViz",
+    "displayName": "ExtendedDownloadAPIViz",
+    "version": "1.0.0",
+    "description": "e2e",
+    "supportUrl": "none",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

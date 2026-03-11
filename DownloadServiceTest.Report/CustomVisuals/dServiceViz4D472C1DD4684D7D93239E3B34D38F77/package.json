@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "author": {
+    "name": "Shafeeq-Azzam",
+    "email": "t-sazzam@microsoft.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/dServiceViz4D472C1DD4684D7D93239E3B34D38F77.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "name": "dServiceViz_pdf",
+    "displayName": "DServiceVizPdf",
+    "guid": "dServiceViz4D472C1DD4684D7D93239E3B34D38F77",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "for testing",
+    "supportUrl": "www.mock.com",
+    "gitHubUrl": ""
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
