@@ -1,0 +1,19 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBIDesktopVersion = 2.115.6859.0 (Main)
+
+annotation PBI_QueryOrder = ["Simple Input"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table 'Simple Input'
+ref table DateTableTemplate_ee32b52a-9bff-4526-8cdf-528788454805
+
+ref cultureInfo en-US
+

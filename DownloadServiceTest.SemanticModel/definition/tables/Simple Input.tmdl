@@ -1,0 +1,33 @@
+table 'Simple Input'
+	lineageTag: 45dd4894-720c-4100-978b-5f2dffbe8f37
+
+	column a
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b2c097f-009c-4652-a13f-52f85bfd55fe
+		summarizeBy: sum
+		sourceColumn: a
+
+		annotation SummarizationSetBy = Automatic
+
+	column b
+		dataType: int64
+		formatString: 0
+		lineageTag: 4789115f-9d5c-4ebb-9114-cf154bc214e3
+		summarizeBy: sum
+		sourceColumn: b
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Simple Input-a9b99c13-2d49-4fe2-b40e-4af1489aefb3' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\gekeldaw\OneDrive - Microsoft\root\Datasets\Simple Input.csv"),[Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"a", Int64.Type}, {"b", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
