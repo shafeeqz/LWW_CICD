@@ -1,4 +1,4 @@
 {
-  "type": "PgSQLDbNative",
-  "displayName": "PgSQLDbNative"
+  "type": "Warehouse",
+  "displayName": "Warehouse"
 }
