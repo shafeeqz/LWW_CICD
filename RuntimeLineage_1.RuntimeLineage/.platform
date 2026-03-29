@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "RuntimeLineage",
+    "displayName": "RuntimeLineage",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "3a3b5a45-953c-46f3-b6e8-6f0e9e4bf31b"
+  }
+}

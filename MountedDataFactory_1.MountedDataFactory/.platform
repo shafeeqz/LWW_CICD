@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "MountedDataFactory",
+    "displayName": "MountedDataFactory",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "0ecba25a-1a3f-4db2-9372-e65bb448e636"
+  }
+}

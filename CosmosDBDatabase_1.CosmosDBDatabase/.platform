@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "CosmosDBDatabase",
+    "displayName": "CosmosDBDatabase",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "164f2643-c34c-4d1e-9376-46e4fb09ad08"
+  }
+}

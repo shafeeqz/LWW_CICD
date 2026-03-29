@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "DataBuildToolJob",
+    "displayName": "DataBuildToolJob",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "c7c1b7b9-71c7-4203-bbd4-0ec8324eb971"
+  }
+}
