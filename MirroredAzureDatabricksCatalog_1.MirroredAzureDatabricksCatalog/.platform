@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "MirroredAzureDatabricksCatalog",
+    "displayName": "MirroredAzureDatabricksCatalog",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "24d81b25-e64e-4a93-a6f5-5e1768a3b77f"
+  }
+}

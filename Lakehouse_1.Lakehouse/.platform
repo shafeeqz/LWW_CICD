@@ -1,0 +1,12 @@
+{
+  "config": {
+    "logicalId": "40288176-f77d-4ca7-aa86-165dea21fe7c",
+    "version": "2.1"
+  },
+  "metadata": {
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000",
+    "displayName": "Lakehouse",
+    "type": "Lakehouse"
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json"
+}

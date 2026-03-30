@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "DigitalTwinBuilder",
+    "displayName": "DigitalTwinBuilder",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "7d0def15-030b-4af9-9eba-ebf8af87afa5"
+  }
+}
