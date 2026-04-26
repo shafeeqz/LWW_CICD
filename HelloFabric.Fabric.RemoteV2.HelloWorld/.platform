@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Fabric.RemoteV2.HelloWorld",
+    "displayName": "HelloFabric"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3a741c51-fb78-83d3-4af2-65a360fb5161"
+  }
+}

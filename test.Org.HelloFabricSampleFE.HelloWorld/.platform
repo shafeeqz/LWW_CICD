@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Org.HelloFabricSampleFE.HelloWorld",
+    "displayName": "test"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8dce647f-1687-8fc9-45b9-278ec4baa89a"
+  }
+}
