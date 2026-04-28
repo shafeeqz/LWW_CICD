@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Fabric.FERemoteWorkloadSample.CalculatorSample",
-    "displayName": "TheCc"
+    "type": "Fabric.RemoteV2.HelloWorld",
+    "displayName": "HelloV2"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "3d77189f-b367-b1be-4cb8-79ebc140305e"
+    "logicalId": "b16b279b-a0bf-9548-4a14-c306622b8c10"
   }
 }
