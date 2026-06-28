@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Osher.RemoteV2Sample.HelloWorld",
+    "displayName": "Hell1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "020e376f-711f-a21d-496c-c585ca8eef9b"
+  }
+}
